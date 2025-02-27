@@ -46,6 +46,7 @@ body {
     display: flex;
     gap: 20px; 
     padding-right: 0; 
+     margin-right: 1100px;
 }
 
 .nav-bar .menu li a {
