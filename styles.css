@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,189 +6,132 @@
 
 body {
     font-family: Arial, sans-serif;
-    padding: 0;
-    margin: 0;
+    background-color: white;
 }
+
 .top-bar {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 16px;
-width: 2026px;
-height: 60px;
-
-
-
+    width: 100%; /* Make it responsive */
 }
-.top-bar:hover{
+
+.top-bar:hover {
     opacity: 0.8;
 }
-.top-bar-p{
+
+.top-bar-p {
     padding-top: 10px;
-    font-family:var(--font-heading-family); 
+    font-family: var(--font-heading-family);
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
 }
-   
-    
+
 .nav-bar {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #111;
     padding: 15px 50px;
- height: 110px;
-    width: 2026px;
+    width: 100%; /* Make it responsive */
     position: sticky;
     top: 0;
-
-   
-    
 }
-.logo {
-    color: white;
-    font-size: 10px;
-    font-weight: bold;
-    margin-left: 30px;
-    
 
-
-    
-}
 .nav-bar .menu {
     list-style: none;
     display: flex;
-    padding-right: 800px;
-    
+    gap: 20px; /* Add gap between menu items */
+    padding-right: 0; /* Remove fixed padding */
 }
-.nav-bar .menu li {
-    margin: 0 15px;
-}
+
 .nav-bar .menu li a {
     color: white;
     text-decoration: none;
     font-size: 25px;
     font-family: inherit;
 }
+
+.nav-bar .menu li a:hover {
+    text-decoration: underline;
+}
+
 .nav-bar .icons {
     display: flex;
     gap: 40px;
-    margin-right: 150px;
 }
+
 .nav-bar .icons i {
-  
     color: white;
     font-size: 30px;
     text-decoration: none;
-}
-.nav-bar .menu li a:hover{
-    text-decoration: underline;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color:white;
-
-
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: auto; 
-    max-width: 1000px; 
+    gap: 20px; /* Add gap between grid items */
+    max-width: 1000px;
+    margin: 40px auto; /* Center the grid */
     padding: 20px;
-    cursor: pointer;
-    margin: 150px;
-    margin-top: 40px;
-    
-}
-
-
-.grid-item {
-    background-color:white;
-    padding: 15px;
-    
-    
-    
 }
 
 .grid-item img {
-    width: auto; 
-    height: 500px;
-    
-    
-    transition: transform 0.3s ease; 
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
 }
+
 .founder-section {
     display: flex;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: center; /* Center the founder section */
     padding: 50px 20px;
 }
 
 .founder-container {
     display: flex;
     align-items: center;
-    max-width: 1000px;
     gap: 40px;
-    margin-left: 170px;
-  margin-top: 1px;
-   
-    
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container */
 }
 
 .founder-image img {
     width: 100%;
     max-width: 350px;
-    height:835.05px;
-    width: 624.6px;
-    max-width: 100%;
-    
+    height: auto; /* Maintain aspect ratio */
 }
 
 .founder-text {
     text-align: left;
-   
 }
 
 .founder-text h2 {
     font-size: 25px;
     margin-bottom: 10px;
-    font-family:var(--font-heading-family);
-    font-stretch: 100px;
-    height: 31.2px;
-   width:400px;
-   font-style: normal;
 }
 
 .founder-text p {
     font-size: 16px;
     color: #333;
     margin-bottom: 20px;
-    font-family: var(--font-body-family);
-    font-size: 20px;
-    width: 100%;
 }
-
 
 .about-btn {
     background-color: black;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 20px 45px;
     border: none;
     cursor: pointer;
     font-size: 20px;
     transition: 0.3s;
-    
 }
 
 .about-btn:hover {
-   box-shadow: rgba(255, 255, 255, 0) 0px ;
+    box-shadow: rgba(255, 255, 255, 0) 0px;
 }
 
 .footer {
@@ -196,8 +139,6 @@ body {
     color: white;
     text-align: center;
     padding: 30px 20px;
-    font-size: 14px;
-    height: 600px;
 }
 
 .footer-container {
@@ -210,9 +151,6 @@ body {
 .contact-info h3 {
     font-size: 30px;
     margin-bottom: 40px;
-    height: 20.8px;
-    width:  500.2px;
-    font-family: apple-system, BlinkMacSystemFo;
 }
 
 .contact-info p {
@@ -223,10 +161,6 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
-}
-
-.contact-info p {
-    text-decoration: underline;
 }
 
 .social-icons {
@@ -240,22 +174,19 @@ body {
 }
 
 .footer-bottom {
-    margin-top: 150px;
+    margin-top: 20px;
     border-top: 1px solid #444;
-    padding-top: 125px;
+    padding-top: 20px;
     font-size: 12px;
 }
 
 .footer-bottom a {
     color: white;
     text-decoration: none;
-    margin:10px;
+    margin: 10px;
     font-size: 15px;
 }
 
 .footer-bottom a:hover {
-    text-decoration: underline;
-}
-.home{
     text-decoration: underline;
 }
